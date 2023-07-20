@@ -13,7 +13,7 @@ function Header({ currentPage, handlePageChange }) {
               onClick={() => handlePageChange('announcements')}
               className={currentPage === 'announcements' ? 'nav-link active' : 'nav-link'}
             >
-              Announcements
+              🧡Announcements
             </a>
           </li>
           <li className="nav-item">
@@ -22,7 +22,7 @@ function Header({ currentPage, handlePageChange }) {
               onClick={() => handlePageChange('assignments')}
               className={currentPage === 'assignments' ? 'nav-link active' : 'nav-link'}
             >
-              Assignments
+              🧐Assignments
             </a>
           </li>
           <li className="nav-item">
@@ -31,7 +31,7 @@ function Header({ currentPage, handlePageChange }) {
               onClick={() => handlePageChange('resources')}
               className={currentPage === 'resources' ? 'nav-link active' : 'nav-link'}
             >
-              Resources
+              🐶Resources
             </a>
           </li>
           {/* <li className="nav-item">
