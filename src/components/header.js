@@ -1,5 +1,6 @@
 import React from 'react';
 import title from './images/title image.png';
+import GradeLevelDropdown from '../GradeLevelDropdown'; // Import the GradeLevelDropdown component
 
 function Header({ currentPage, handlePageChange }) {
   return (
@@ -34,16 +35,19 @@ function Header({ currentPage, handlePageChange }) {
               🐶Resources
             </a>
           </li>
-          {/* <li className="nav-item">
+          <li className="nav-item">
             <a
               href="#teachers"
               onClick={() => handlePageChange('teachers')}
               className={currentPage === 'teachers' ? 'nav-link active' : 'nav-link'}
             >
-              Teachers
+              🌞Teachers
             </a>
-          </li> */}
+          </li>
         </ul>
+
+        {/* Render GradeLevelDropdown component */}
+        <GradeLevelDropdown />
       </div>
     </header>
   );
